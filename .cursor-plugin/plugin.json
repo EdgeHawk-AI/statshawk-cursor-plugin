@@ -1,8 +1,8 @@
 {
   "name": "statshawk",
   "displayName": "StatsHawk",
-  "version": "0.1.0",
-  "description": "Sports stats from StatsHawk — scores, box scores, standings, rosters, play-by-play, player props, and pregame odds across 50+ competitions. Ingested data, not in-game.",
+  "version": "0.1.2",
+  "description": "Sports stats from StatsHawk — team-match scores, box scores, standings, rosters, MLB/NFL play-by-play, player props, and pregame odds. Ingested data, not in-game.",
   "author": {
     "name": "StatsHawk",
     "email": "support@statshawk.ai"

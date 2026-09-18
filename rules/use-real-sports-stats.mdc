@@ -5,13 +5,21 @@ alwaysApply: false
 
 When the user asks for scores, standings, box scores, rosters, game logs,
 injuries, player props, hit rates, matchups, or betting lines, use the
-StatsHawk MCP tools. Do not invent numbers from memory.
+StatsHawk MCP tools. Do not invent numbers from memory. Arithmetic on
+tool-returned values is allowed.
 
 - Resolve players with `search_player` before any person-keyed call.
 - Resolve games with `search_games` (or `get_mlb_matchups` for MLB slates)
-  before box scores, play-by-play, or odds.
-- Every number must come from a tool result. If a stat is missing, say so.
-- Do not call StatsHawk live or real-time. It is ingested data, current
-  through a date; lag is typically minutes to about a day by feed.
-- State the season, the through-date, and the games counted. Odds are
-  pregame, not in-play.
+  before box scores, play-by-play, or odds. Those tools are team-match
+  only — not golf, tennis, F1, or MMA events.
+- Use `get_player_props` for averages and hit rates on every plan.
+- Every raw number must come from a tool result. If a stat is missing,
+  say so.
+- Do not call StatsHawk live or real-time. It is ingested data. Cite a
+  through-date only when the payload includes a verified coverage date
+  (kickoff or game date), never an edition span or retrieval time.
+- For prop hit rates, report `hit_rates.<window>.games`, not the card's
+  top-level `games`. Odds are pregame, not in-play.
+- On 401, ask the user to reconnect StatsHawk in Customize. Retry
+  transient 5xx at most twice. On `QUOTA_EXCEEDED`, stop — do not walk
+  box scores. They consume the same exhausted allowance.
