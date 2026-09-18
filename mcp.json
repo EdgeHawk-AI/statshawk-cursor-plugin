@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "statshawk": {
+      "url": "https://mcp.statshawk.ai/mcp"
+    }
+  }
+}

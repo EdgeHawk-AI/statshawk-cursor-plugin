@@ -1,0 +1,14 @@
+---
+description: Use StatsHawk MCP tools for real sports statistics instead of estimating from training data.
+alwaysApply: false
+---
+
+When the user asks for scores, standings, box scores, rosters, game logs,
+injuries, player props, hit rates, matchups, or betting lines, use the
+StatsHawk MCP tools. Do not invent numbers from memory.
+
+- Resolve players with `search_player` before any person-keyed call.
+- Resolve games with `search_games` (or `get_mlb_matchups` for MLB slates)
+  before box scores, play-by-play, or odds.
+- Every number must come from a tool result. If a stat is missing, say so.
+- State the season, date range, and games counted in the answer.

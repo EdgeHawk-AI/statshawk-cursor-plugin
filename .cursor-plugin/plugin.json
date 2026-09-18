@@ -1,0 +1,24 @@
+{
+  "name": "statshawk",
+  "displayName": "StatsHawk",
+  "version": "0.1.0",
+  "description": "Real sports stats for Cursor — scores, box scores, standings, rosters, play-by-play, player props, and pregame odds across 50+ competitions.",
+  "author": {
+    "name": "StatsHawk",
+    "email": "support@statshawk.ai"
+  },
+  "homepage": "https://statshawk.ai",
+  "license": "MIT",
+  "keywords": [
+    "sports",
+    "stats",
+    "mlb",
+    "nba",
+    "nfl",
+    "nhl",
+    "odds",
+    "player-props",
+    "mcp"
+  ],
+  "logo": "assets/logo.png"
+}
