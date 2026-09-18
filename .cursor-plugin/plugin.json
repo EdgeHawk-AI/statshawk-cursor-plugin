@@ -8,6 +8,7 @@
     "email": "support@statshawk.ai"
   },
   "homepage": "https://statshawk.ai",
+  "repository": "https://github.com/EdgeHawk-AI/statshawk-cursor-plugin",
   "license": "MIT",
   "keywords": [
     "sports",

@@ -1,5 +1,5 @@
 ---
-name: sports-stats
+name: statshawk
 description: Answer the current sports question with live StatsHawk data
 ---
 
