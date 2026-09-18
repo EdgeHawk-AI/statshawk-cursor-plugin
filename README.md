@@ -9,22 +9,24 @@ NCAA, soccer, golf, tennis, and F1.
 
 ## Install
 
-**Cursor Marketplace** — search for **StatsHawk** in Customize and
-install. (Listing in review.)
+Until StatsHawk is in the [Cursor Marketplace](https://cursor.com/marketplace),
+install from this repo:
 
-**From this repo** until the listing is live:
-
-1. Copy the plugin into Cursor’s local plugins folder:
+1. Clone and copy the plugin into Cursor’s local plugins folder:
 
    ```bash
+   git clone https://github.com/EdgeHawk-AI/statshawk-cursor-plugin.git
    mkdir -p ~/.cursor/plugins/local/statshawk
-   rsync -a --delete --exclude .git ./ ~/.cursor/plugins/local/statshawk/
+   rsync -a --delete --exclude .git statshawk-cursor-plugin/ ~/.cursor/plugins/local/statshawk/
    ```
 
    Copy the files; don’t symlink from elsewhere — Cursor skips those.
 
 2. Reload the window: Command Palette → **Developer: Reload Window**.
 3. Open **Customize** and confirm **StatsHawk** is installed.
+
+Once it is listed, search for **StatsHawk** in Customize and install from
+there instead.
 
 ## Sign in
 
@@ -46,13 +48,18 @@ Ask in chat the way you would a researcher:
 - “Ohtani over 1.5 hits in 6 of his last 10?”
 - “What’s the Yankees–Red Sox moneyline?”
 
-Or run **`/statshawk`** to force a live lookup for the current
-question.
+Or run **`/statshawk`** to look up the current question in StatsHawk
+instead of answering from training data.
 
 The agent resolves players and games through StatsHawk first, then pulls
 box scores, play-by-play, props, or odds. Answers include the season and
-the games counted. If a stat isn’t available, it says so rather than
-filling in a guess.
+the date they are current through. If a stat isn’t available, it says so
+rather than filling in a guess.
+
+StatsHawk is **ingested stats**, not in-game or real-time data. Freshness
+depends on the feed — often around five minutes for scores and box
+scores, and up to about a day for some derived stats. Pregame odds are
+posted lines, not in-play.
 
 ## What’s included
 

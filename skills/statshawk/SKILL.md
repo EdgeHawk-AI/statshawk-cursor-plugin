@@ -9,6 +9,12 @@ StatsHawk is the source of truth for sports numbers in this plugin. Every
 figure must come from a StatsHawk MCP tool call. Never estimate, fill gaps
 from memory, or scrape. If data is missing, say so.
 
+Looking a question up in StatsHawk is not in-game or real-time coverage.
+StatsHawk does not serve those. Data is ingested and current through a
+date; freshness is typically about five minutes for scores and box
+scores, and can be up to about a day for some derived stats. Cite that
+through-date. Odds tools are pregame boards only — never in-play.
+
 Sign-in is OAuth against the hosted server at `https://mcp.statshawk.ai/mcp`.
 A free account includes 5,000 units/month. Create one at
 https://statshawk.ai if the user is not connected.
@@ -81,8 +87,10 @@ summarize; do not auto-page unless asked.
 
 ## Presenting
 
-State the season, the date range, and the games counted, e.g. "through
-2026-09-18". When a stat or phase is not registered, say it is not
+State the season, the date the data is current through, and the games
+counted, e.g. "through 2026-09-18". Do not call the numbers live,
+real-time, or in-game. If the user asks for those, say StatsHawk does not
+have them. When a stat or phase is not registered, say it is not
 available rather than approximating.
 
 Docs: https://statshawk.ai/docs · MCP setup: https://statshawk.ai/mcp

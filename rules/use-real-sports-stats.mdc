@@ -11,4 +11,7 @@ StatsHawk MCP tools. Do not invent numbers from memory.
 - Resolve games with `search_games` (or `get_mlb_matchups` for MLB slates)
   before box scores, play-by-play, or odds.
 - Every number must come from a tool result. If a stat is missing, say so.
-- State the season, date range, and games counted in the answer.
+- Do not call StatsHawk live or real-time. It is ingested data, current
+  through a date; lag is typically minutes to about a day by feed.
+- State the season, the through-date, and the games counted. Odds are
+  pregame, not in-play.

@@ -2,12 +2,12 @@
   "name": "statshawk",
   "displayName": "StatsHawk",
   "version": "0.1.0",
-  "description": "Real sports stats for Cursor — scores, box scores, standings, rosters, play-by-play, player props, and pregame odds across 50+ competitions.",
+  "description": "Sports stats from StatsHawk — scores, box scores, standings, rosters, play-by-play, player props, and pregame odds across 50+ competitions. Ingested data, not in-game.",
   "author": {
     "name": "StatsHawk",
     "email": "support@statshawk.ai"
   },
-  "homepage": "https://statshawk.ai",
+  "homepage": "https://statshawk.ai/mcp?utm_source=cursor-plugin",
   "repository": "https://github.com/EdgeHawk-AI/statshawk-cursor-plugin",
   "license": "MIT",
   "keywords": [
